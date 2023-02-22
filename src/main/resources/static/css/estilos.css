@@ -1,0 +1,117 @@
+/* ------------------------- */
+
+/* Estilos Generales */
+
+/* ------------------------- */
+
+body {
+     background-image: url(/img/background.jpg); background-size: cover
+     /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
+}
+
+.titulo {
+     font-size: 55px;
+     text-transform: uppercase;
+     letter-spacing: 7px;
+}
+
+.galeria img {
+     box-shadow: 0 8px 10px -4px rgba(0, 0, 0, .6);
+     border-radius: 15px;
+}
+
+.card-body img {
+     box-shadow: 0 8px 10px -4px rgba(0, 0, 0, .6);
+     border-radius: 15px;
+     max-height: 400px;
+}
+
+.materialbox-caption {
+     bottom: 30px;
+     right: 0;
+     width: 40%;
+     height: auto;
+     padding: 10px;
+     margin: auto;
+     background: #000;
+     box-shadow: 5px 5px #fff;
+     font-size: 20px;
+     color: #fff;
+     line-height: 28px;
+}
+
+.galeria .col {
+     margin-bottom: 20px;
+}
+
+.card-body .col {
+     margin-bottom: 20px;
+}
+
+#mazo {
+     display: flex;
+     flex-direction: row;
+     background-color: rgba(245, 245, 220, 0.267);
+}
+
+img.responsive-img, video.responsive-video {
+     max-width: 100%;
+     height: auto
+}
+
+.materialboxed {
+     display: block;
+     cursor: -webkit-zoom-in;
+     cursor: zoom-in;
+     position: relative;
+     -webkit-transition: opacity .4s;
+     transition: opacity .4s;
+     -webkit-backface-visibility: hidden
+}
+
+.materialboxed:hover:not(.active) {
+     opacity: .8
+}
+
+.materialboxed.active {
+     cursor: -webkit-zoom-out;
+     cursor: zoom-out
+}
+
+#materialbox-overlay {
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: #292929;
+     z-index: 1000;
+     will-change: opacity
+}
+
+.materialbox-caption {
+     position: fixed;
+     display: none;
+     color: #fff;
+     line-height: 50px;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     padding: 0% 15%;
+     height: 50px;
+     z-index: 1000;
+     -webkit-font-smoothing: antialiased
+}
+
+@media screen and (max-width: 600px) {
+     .materialbox-caption {
+          width: 90%;
+     }
+}
+
+@media screen and (max-width: 992px) {
+     .materialbox-caption {
+          width: 70%;
+     }
+}
